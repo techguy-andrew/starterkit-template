@@ -51,6 +51,45 @@ This is a Next.js 15 starter template with App Router architecture built for rap
 - `src/lib/validations.ts` - Zod validation schemas
 - `src/lib/metadata.ts` - SEO metadata construction utilities
 
+### Page Structure
+
+**Route Groups**: The application uses Next.js route groups to organize pages:
+
+#### (auth) Route Group - Authentication Pages
+- `/login` - User login page
+- `/register` - User registration page  
+- `/forgot-password` - Password reset page
+
+#### (dashboard) Route Group - Protected Dashboard Pages
+- `/billing` - Billing and subscription management
+- `/blog` - Blog/content management
+- `/events` - Events management
+- `/live` - Live streaming/sessions
+- `/membership` - Membership management
+- `/profile` - User profile settings
+- `/resources` - Resource library
+- `/settings` - Application settings
+- `/videos` - Video content management
+
+#### (public) Route Group - Public Marketing Pages
+- `/about` - About page
+- `/contact` - Contact information/form
+- `/pricing` - Pricing plans
+- `/privacy` - Privacy policy
+- `/terms` - Terms of service
+
+#### Other Pages
+- `/` - Root/home page
+- `/examples` - Examples/demo page
+
+#### API Routes
+- `/api/auth` - Authentication endpoints
+- `/api/subscriptions` - Subscription management endpoints
+- `/api/users` - User management endpoints
+- `/api/webhooks` - Webhook handlers
+
+**Note**: Route groups `(auth)`, `(dashboard)`, and `(public)` are organizational only - the parentheses do not appear in the actual URLs.
+
 ### Template System
 This is a template repository with placeholder variables:
 - Template variables in `{{VARIABLE_NAME}}` format throughout codebase
